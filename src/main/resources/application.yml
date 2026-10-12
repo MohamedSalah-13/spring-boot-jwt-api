@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: product-api
+  # Default: in-memory H2 so the project runs with zero setup.
+  # Activate the "postgres" profile for a real database.
+  datasource:
+    url: jdbc:h2:mem:productdb;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+    username: sa
+    password: ""
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  data:
+    web:
+      pageable:
+        max-page-size: 100
+
+app:
+  jwt:
+    # At least 32 characters. If empty, a random key is generated at startup.
+    secret: ${JWT_SECRET:}
+    expiration: ${JWT_EXPIRATION:1h}
+  admin:
+    # When both are set, an ADMIN account is created at startup if it does not exist.
+    email: ${ADMIN_EMAIL:}
+    password: ${ADMIN_PASSWORD:}
