@@ -1,5 +1,7 @@
 # Spring Boot JWT REST API
 
+[![CI](https://github.com/MohamedSalah-13/spring-boot-jwt-api/actions/workflows/ci.yml/badge.svg)](https://github.com/MohamedSalah-13/spring-boot-jwt-api/actions/workflows/ci.yml) ![Java](https://img.shields.io/badge/Java-17-ED8B00?logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.1-6DB33F?logo=springboot&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-auth-000000?logo=jsonwebtokens&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-database-4169E1?logo=postgresql&logoColor=white) ![Flyway](https://img.shields.io/badge/Flyway-migrations-CC0200?logo=flyway&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-ready-2496ED?logo=docker&logoColor=white)
+
 A small, production-style REST API that shows how I build secure back ends with Spring Boot:
 JWT authentication, role-based access control, validated CRUD endpoints, versioned database
 migrations, consistent error responses and interactive OpenAPI documentation.
